@@ -1,0 +1,83 @@
+
+
+<div class="dashboard dashboard_1">
+  <div class="full_container">
+     <div class="inner_container">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+           <div class="sidebar_blog_1">
+              <div class="sidebar-header">
+                 <div class="logo_section">
+                    <a href="index.html"><img class="logo_icon img-responsive" src="images/logo/logo_icon.png" alt="#" /></a>
+                 </div>
+              </div>
+              <div class="sidebar_user_info">
+                 <div class="icon_setting"></div>
+                 <div class="user_profle_side">
+                    <div class="user_img"><img class="img-responsive" src="images/layout_img/user_img.jpg" alt="#" /></div>
+                    <div class="user_info">
+                       <h6>John David</h6>
+                       <p><span class="online_animation"></span> Online</p>
+                    </div>
+                 </div>
+              </div>
+           </div>
+           <div class="sidebar_blog_2">
+              <h4 routerLink="info" routerLinkActive="active">General</h4>
+              <ul class="list-unstyled components">
+                 
+                 <li>
+                  <a routerLink="create-menu" routerLinkActive="active">
+                     <img  style="width: 30px; height: auto;margin-right: 10px;" src="take-notes.png" alt="#" />
+                      <span>Create Data Menu</span>
+                  </a></li>
+                
+                 <li><a routerLink="check-list" routerLinkActive="active"><img  style="width: 30px; height: auto;margin-right: 10px;" src="interfaz.png" alt="#" /> <span>Check your data menu</span></a></li>
+                 
+                 <!--   
+                 <li>
+                    <a href="contact.html">
+                    <i class="fa fa-paper-plane red_color"></i> <span>Contact</span></a>
+                 </li> -->
+                 
+                 <li class="sidebar-item">
+                  <a routerLink="info" class="sidebar-link">
+                    <i class="material-icons">help_outline</i>
+                    <span>Help & Instructions</span>
+                  </a>
+                </li>
+                
+              </ul>
+           </div>
+        </nav>
+        <!-- end sidebar -->
+        <!-- right content -->
+        <div id="content">
+           <!-- topbar -->
+           <div class="topbar">
+              <nav class="navbar navbar-expand-lg navbar-light">
+                 <div class="full">
+                    
+                    <div class="right_topbar">
+                       <div class="icon_info">
+                          
+                          <ul class="user_profile_dd">
+                             <li>
+                                <a class="dropdown-toggle" data-toggle="dropdown"><img class="img-responsive rounded-circle" src="images/layout_img/user_img.jpg" alt="#" /><span class="name_user">John David</span></a>
+                                <div class="dropdown-menu">
+                                   <a class="dropdown-item" href="profile.html">My Profile</a>
+                                   <a class="dropdown-item" href="settings.html">Settings</a>
+                                   <a class="dropdown-item" href="help.html">Help</a>
+                                   <a class="dropdown-item" href="#"><span>Log Out</span> <i class="fa fa-sign-out"></i></a>
+                                </div>
+                             </li>
+                          </ul>
+                       </div>
+                    </div>
+                 </div>
+              </nav>
+           </div>
+           <!-- end topbar -->
+            
+ <router-outlet></router-outlet>          
+</div>

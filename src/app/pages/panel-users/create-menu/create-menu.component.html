@@ -1,0 +1,44 @@
+
+<form [formGroup]="menuForm" (ngSubmit)="submit()">
+  <!-- Encabezado y botones sticky -->
+  <div class="sticky-header bg-white p-3 border-bottom">
+    <h2 class="mt-0">Create Data Menu</h2>
+    <button type="button" (click)="forceReloadComponent()" class="btn btn-primary mr-2">
+      <img  style="width: 20px; height: auto;margin-right:10px;" src="boton-agregar.png"/>Add Other Item</button>
+    <button type="submit" class="btn btn-success">
+      <img  style="width: 20px; height: auto;margin-right:10px;" src="enviar.png"/>Send menu</button>
+  </div>
+
+  <div class="mt-3" formArrayName="items">
+    @for (item of items.controls; track $index; let i = $index) {
+      <div [formGroupName]="i" class="mb-3">
+        <label class="form-label mr-3">
+          Name:
+          <input formControlName="nombre" class="form-control" />
+        </label>
+
+        <label class="form-label">
+          Price:
+          <input type="number" formControlName="precio" class="form-control" />
+        </label>
+        <br>
+        <label class="form-label">
+          Description:
+          <textarea formControlName="descripcion" class="form-control" rows="3"></textarea>
+        </label>
+        <br>
+
+        <button
+          type="button"
+          (click)="removeItem(items.length - 1 - i)"
+          class="btn btn-danger mt-2"
+        >
+          Delete Item
+        </button>
+
+        <hr />
+      </div>
+    }
+  </div>
+</form>
+

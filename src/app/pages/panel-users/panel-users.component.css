@@ -1,0 +1,42 @@
+:host {
+  --mdc-list-list-item-label-text-color: white;
+}
+
+.layout {
+  height: 100vh;
+}
+
+.sidenav {
+  width: 220px;
+  background-color:#546e7a ;
+  color: white;
+}
+
+.logo {
+  color: white;
+  text-align: center;
+  margin: 16px 0;
+}
+
+mat-nav-list a {
+  color: white;
+}
+
+.topbar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flex-spacer {
+  flex: 1 1 auto;
+}
+
+.content {
+  padding: 24px;
+}
+
+
+
+
+
+
